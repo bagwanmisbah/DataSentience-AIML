@@ -98,7 +98,7 @@ The project requires the Python packages (mentioned in  `requirements.txt`)
 
 ## Contributing
 
-Contributions are welcome. Please read the [`CONTRIBUTING.md`](https://github.com/KRUTHIKTR/Customer-Churn-Prediction/blob/main/Contributing.md)) file for guidelines.
+Contributions are welcome. Please read the [`CONTRIBUTING.md`](Contributing) file for guidelines.
 
 ## License
 
@@ -108,26 +108,6 @@ This project is licensed under the **MIT License**. See the [`LICENSE`](LICENSE)
 
 - Incorporate real-time prediction using APIs or dashboards.  
 - Add customer segmentation based on behavior for tailored marketing.  
-- Integrate time-series data or customer feedback for deeper analysis.  
-
-## Contact
-
-For any queries, feel free to reach out:
-
-<a href="mailto:kruthiktrgowda24@gmail.com" target="_blank">
-  <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="26" alt="gmail logo" />
-</a>
-
-<a href="https://github.com/KRUTHIKTR" target="_blank">
-  <img src="https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white" alt="github" />
-</a>
-
-<a href="https://linkedin.com/in/kruthiktr" target="_blank">
-  <img src="https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" />
-</a>
-
-<a href="https://linktr.ee/kruthik_tr" target="_blank">
-  <img src="https://img.shields.io/static/v1?message=Linktree&logo=linktree&label=&color=1de9b6&logoColor=white&labelColor=&style=for-the-badge" height="26" alt="linktree logo" />
-</a>
-
+- Integrate time-series data or customer feedback for deeper analysis.
+  
 ###### Thank you for checking out the Customer Churn Prediction project! Feel free to explore and contribute.
