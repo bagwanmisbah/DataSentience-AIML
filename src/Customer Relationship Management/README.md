@@ -98,7 +98,7 @@ The project requires the Python packages (mentioned in  `requirements.txt`)
 
 ## Contributing
 
-Contributions are welcome. Please read the [`CONTRIBUTING.md`](Contributing) file for guidelines.
+Contributions are welcome. Please read the `CONTRIBUTING.md` file for guidelines.
 
 ## License
 
