@@ -1,9 +1,12 @@
 import streamlit as st
 from catboost import CatBoostRegressor
 import pandas as pd
+import os
 
+
+model_path = os.path.join(os.path.dirname(__file__), "GDP_model.cbm")
 model = CatBoostRegressor()
-model.load_model('GDP_model.cbm')
+model.load_model(model_path)
 
 st.header("GDP Predictor🌏",divider =True)
 st.write("This model predicts a Country's Per Capita GDP based on suitable factors.  \nThe dataset used for this project can be found on kaggle : (https://www.kaggle.com/rutikbhoyar/gdp-prediction-dataset)")
