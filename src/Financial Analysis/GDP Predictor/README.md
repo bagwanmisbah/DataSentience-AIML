@@ -2,7 +2,7 @@
 
 A simple and interactive web application built with **Streamlit** that predicts a country's **GDP** based on economic indicators using a **CatBoost Regressor**.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-deployment-url.streamlit.app)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://qdm44qwg7c6sckbuss69kc.streamlit.app/)
 
 ---
 
