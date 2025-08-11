@@ -1,7 +1,7 @@
 📈 Crypto Price Forecasting Model
 This project predicts the future closing prices of cryptocurrencies using historical OHLC (Open, High, Low, Close) data.
 The workflow follows a modular SSOC-style approach with separate scripts for preprocessing, training, and predicting.
-
+[!ui](assets/image.png)
 🚀 Features
 Data Preprocessing – Cleans raw data, handles missing values, creates lag features and moving averages.
 
