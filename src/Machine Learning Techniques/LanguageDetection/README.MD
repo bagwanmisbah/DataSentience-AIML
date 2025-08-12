@@ -46,7 +46,7 @@ Data set : https://www.kaggle.com/datasets/basilb2s/language-detection
 <br>
 
 **Result:** 
-This helps in detecting class imbalance issues (e.g., Hindi had the fewest samples) and ensures we have a clear picture of data distribution before training the model.
+- This helps in detecting class imbalance issues (e.g., Hindi had the fewest samples) and ensures we have a clear picture of data distribution before training the model.
 <br>
 
 **3. Replaced Manual Count Vectorization with TfidfVectorizer**
@@ -71,6 +71,7 @@ This helps in detecting class imbalance issues (e.g., Hindi had the fewest sampl
 <br>
 
 **Steps taken:**
+
 (1) Selected multiple classifiers for evaluation:
 - Logistic Regression
 - Random Forest
@@ -126,7 +127,7 @@ While the accuracy slightly dropped, the model is now trained on cleaner data, w
 I have kept both versions for comparison in the README.
 
 <br>
-**Best model based on accuracy is still Naive Bayes**
+## Best model based on accuracy is still Naive Bayes
 
 
 **5. Added Confusion Matrix Heatmaps**
