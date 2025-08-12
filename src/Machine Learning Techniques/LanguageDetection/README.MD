@@ -19,8 +19,8 @@ Data set : https://www.kaggle.com/datasets/basilb2s/language-detection
 
 **1. Dataset Exploration & Cleaning**
 
-**Need:**
-- The goal of this step is to carefully understand the dataset, identify and remove any missing, duplicate, or invalid records, and perform text cleaning so that the data is properly structured and ready for model training.
+**Need:**  I noticed that the dataset was uncleaned, which gave an accuracy of around 98% with Naive Bayes. Therefore, I first decided to clean the dataset to carefully understand it, identify and remove any missing, duplicate, or invalid records, and perform text cleaning so that the data would be properly structured and ready for model training.
+
 <br>
 
 **Steps taken:**
