@@ -22,12 +22,14 @@ Data set : https://www.kaggle.com/datasets/basilb2s/language-detection
 **Need:**
 - The goal of this step is to carefully understand the dataset, identify and remove any missing, duplicate, or invalid records, and perform text cleaning so that the data is properly structured and ready for model training.
 <br>
+
 **Steps taken:**
 - Checked dataset shape, column names, missing values, empty strings, and duplicate rows.
 - Removed 66 duplicate entries.
 - Label encoding - Converted language names to numeric labels for ML models
 - Normalized text to lowercase and removed numbers/special characters.
 <br>
+
 **Result:** 
 - After performing proper data cleaning (removing noise, duplicates, and inconsistencies), the Naive Bayes accuracy is now ~94%.
 <br>
@@ -37,9 +39,11 @@ Data set : https://www.kaggle.com/datasets/basilb2s/language-detection
 **Need:** 
 - To visually analyze the dataset and understand how many samples are available for each language.
 <br> 
+
 **Step taken:**
 - Created a bar plot showing number of samples per language.
 <br>
+
 **Result:** 
 - This helps in detecting class imbalance issues (e.g., Hindi had the fewest samples) and ensures we have a clear picture of data distribution before training the model.
 <br>
@@ -50,9 +54,11 @@ Data set : https://www.kaggle.com/datasets/basilb2s/language-detection
 - Manual count vectorization only considers word frequency, which can lead to bias toward frequently occurring but less informative words. 
 - It doesn’t account for the importance of rare yet meaningful terms in classification tasks.
 <br>
+
 **Step taken:**
 - Replaced custom count vectorization logic with TfidfVectorizer from scikit-learn.
 <br>
+
 **Result:** 
 - TF-IDF improves feature weighting by reducing the influence of very frequent but less informative words.
 <br>
@@ -62,6 +68,7 @@ Data set : https://www.kaggle.com/datasets/basilb2s/language-detection
 **Need:**
 - To evaluate multiple machine learning classifiers on the same dataset to identify which model performs best for language detection, ensuring that the chosen model provides the highest accuracy and reliability.
 <br>
+
 **Steps taken:**
 
 (1) Selected multiple classifiers for evaluation:
@@ -71,13 +78,16 @@ Data set : https://www.kaggle.com/datasets/basilb2s/language-detection
 - SVM
 (Along with previously implemented Naive Bayes)
 <br>
+
 (2) Trained each classifier using the same training dataset (x_train, y_train).
 <br>
+
 (3) Evaluated performance of each model using:
 - Accuracy (overall correctness)
 - Precision (correctness for each predicted class)
 - Recall (ability to find all correct examples)
 <br>
+
 **Results:** 
 
 **Naive Bayes Results after data cleaning :**
@@ -85,16 +95,19 @@ Data set : https://www.kaggle.com/datasets/basilb2s/language-detection
 - Precision: 95.86%
 - Recall: 94.84%
 <br>
+
 **Logistic Regression Results:**
 - Accuracy: 94.68%
 - Precision: 96.32%
 - Recall: 94.68%
 <br>
+
 **Random Forest Results:**
 - Accuracy: 92.44%
 - Precision: 95.62%
 - Recall: 92.44%
 <br>
+
 **Decision Tree Results:**
 - Accuracy: 86.44 %
 - Precision: 91.29 %
@@ -106,6 +119,7 @@ Data set : https://www.kaggle.com/datasets/basilb2s/language-detection
 **Naive Bayes accuracy before data cleaning :**
 - Accuracy: 97.3%
 <br>
+
 **Naive Bayes accuracy after data cleaning :**
 - Accuracy: 94.84%
 
@@ -114,13 +128,13 @@ I have kept both versions for comparison in the README.
 
 ## Best model based on accuracy is still Naive Bayes
 
-
 **5. Added Confusion Matrix Heatmaps**
 
 **Need:**
 - To visualize the classification performance of each model by showing the distribution of correct and incorrect predictions for each language. 
 - This helps in identifying where the model is making mistakes and which classes are being confused with each other.
 <br>
+
 **Steps taken:**
 - Implemented a confusion matrix for each classifier using sklearn.metrics.confusion_matrix.
 - Used seaborn.heatmap to create a visually clear heatmap representation of the matrix.
