@@ -115,6 +115,10 @@ Data set : https://www.kaggle.com/datasets/basilb2s/language-detection
 - Recall: 86.44 %
 <br>
 
+**Issue Faced**
+
+An attempt was made to implement the SVM classifier for this dataset. However, due to frequent Colab runtime disconnections and the high computation time required, the model could not be executed successfully. Therefore, the SVM results have not been included in the comparison.
+
 ### Important observation 
 
 **Naive Bayes accuracy before data cleaning :**
