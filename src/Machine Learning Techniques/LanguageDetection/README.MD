@@ -133,15 +133,6 @@ I have kept both versions for comparison in the README.
 
 ## Best model based on accuracy is still Naive Bayes
 
-**Model Comparison Table:** 
-
-      Model	               Accuracy	  Precision    Recall
-0	  Naive Bayes	           94.84	    95.86	       94.84
-1	  Logistic Regression	   94.68	    96.32	       94.68
-2	  Random Forest	         92.44	    95.62	       92.44
-3	  Decision Tree	         86.44	    91.29	       86.44
-
-
 **5. Added Confusion Matrix Heatmaps**
 
 **Need:**
