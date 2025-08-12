@@ -6,3 +6,7 @@ scikit-learn
 statsmodels
 tensorflow
 keras
+streamlit
+Pillow
+opencv-python
+scipy
