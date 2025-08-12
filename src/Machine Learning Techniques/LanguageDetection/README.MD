@@ -19,7 +19,8 @@ Data set : https://www.kaggle.com/datasets/basilb2s/language-detection
 
 **1. Dataset Exploration & Cleaning**
 
-**Need:**  I noticed that the dataset was uncleaned, which gave an accuracy of around 98% with Naive Bayes. Therefore, I first decided to clean the dataset to carefully understand it, identify and remove any missing, duplicate, or invalid records, and perform text cleaning so that the data would be properly structured and ready for model training.
+**Need:** 
+- I noticed that the dataset was uncleaned, which gave an accuracy of around 98% with Naive Bayes. Therefore, I first decided to clean the dataset to carefully understand it, identify and remove any missing, duplicate, or invalid records, and perform text cleaning so that the data would be properly structured and ready for model training.
 
 <br>
 
@@ -36,7 +37,7 @@ Data set : https://www.kaggle.com/datasets/basilb2s/language-detection
 
 **2. Language-wise Data Distribution Visualization**
 
-**Need:** 
+**Need:**  
 - To visually analyze the dataset and understand how many samples are available for each language.
 <br> 
 
