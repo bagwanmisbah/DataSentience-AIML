@@ -145,3 +145,23 @@ I have kept both versions for comparison in the README.
 - Used seaborn.heatmap to create a visually clear heatmap representation of the matrix.
 - Added proper labels for languages on both axes for easy interpretation.
 <br>
+
+## Visualizations
+
+**Language-wise Data Distribution**  
+![Language-wise Data Distribution](https://github.com/Simran-ch/DataSentience-AIML/blob/main/src/Machine%20Learning%20Techniques/LanguageDetection/Language-wise%20Data%20Distribution.png?raw=true)
+
+**Model Accuracy Comparison**  
+![Model Accuracy Comparison](https://github.com/Simran-ch/DataSentience-AIML/blob/main/src/Machine%20Learning%20Techniques/LanguageDetection/Model%20Accuracy%20Comparision.png?raw=true)
+
+**Confusion Matrix - Naive Bayes**  
+![Confusion Matrix - Naive Bayes](https://github.com/Simran-ch/DataSentience-AIML/blob/main/src/Machine%20Learning%20Techniques/LanguageDetection/Confusion%20Matrix%20Heatmap%20-%20Naive%20Bayes.png?raw=true)
+
+**Confusion Matrix - Logistic Regression**  
+![Confusion Matrix - Logistic Regression](https://github.com/Simran-ch/DataSentience-AIML/blob/main/src/Machine%20Learning%20Techniques/LanguageDetection/Confusion%20Matrix%20Heatmap%20-%20Logistic%20Regression.png?raw=true)
+
+**Confusion Matrix - Decision Tree**  
+![Confusion Matrix - Decision Tree](https://github.com/Simran-ch/DataSentience-AIML/blob/main/src/Machine%20Learning%20Techniques/LanguageDetection/Confusion%20Matrix%20Heatmap%20-%20Decision%20Tree.png?raw=true)
+
+**Confusion Matrix - Random Forest**  
+![Confusion Matrix - Random Forest](https://github.com/Simran-ch/DataSentience-AIML/blob/main/src/Machine%20Learning%20Techniques/LanguageDetection/Confusion%20Matrix%20Heatmap%20-%20Random%20Forest.png?raw=true)
