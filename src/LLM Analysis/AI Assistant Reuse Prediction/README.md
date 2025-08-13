@@ -5,7 +5,7 @@ This project aims to predict whether a student will **use an AI assistant again*
 Using session metadata like student level, discipline, session duration, prompts used, and satisfaction ratings, our model learns patterns to make binary predictions:
 - **1 (Yes)** → The student is likely to use the AI assistant again.
 - **0 (No)** → The student is unlikely to reuse the AI assistant.
-
+[!ui](assets/image.png)
 Such predictions can help **AI education platforms** improve user experience, target interventions, and increase long-term engagement.
 
 ---
