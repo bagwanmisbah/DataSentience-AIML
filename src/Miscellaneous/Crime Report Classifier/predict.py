@@ -8,6 +8,8 @@ Usage:
     # From a file (one title per line)
     python predict.py --model /path/to/model.joblib --file /path/to/titles.txt
 """
+###python predict.py --text "Police investigate burglary in city center"
+###python predict.py --text "New park opens in residential neighborhood" use statemens like this to test it
 
 import argparse
 import sys
