@@ -1,51 +1,53 @@
-Company Profit Classifier
+Company Valuation Classifier
 
-This project is designed to classify companies into "High Profit" or "Low Profit" categories based on their financial and industry attributes. The dataset is derived from the Forbes Global 2000 Companies 2025, which includes leading companies worldwide across diverse industries.
+This project is designed to classify companies as Overvalued or Undervalued based on their financial fundamentals. The dataset is derived from the Forbes Global 2000 Companies 2025, which contains global leaders across industries with detailed financial attributes.
 [!ui](assets/image.png)
-
 🔍 Problem Statement
 
-The objective is to predict whether a company is highly profitable or not by leveraging its:
+The main objective is to predict whether a company is Overvalued or Undervalued by analyzing:
 
 Sales ($B)
 
 Assets ($B)
 
-Market Value ($B)
+Profits ($B)
 
 Industry
 
-This is a binary classification problem where the target variable is the profitability status of a company.
+Market Value ($B)
+
+This is a binary classification problem, where the target label is company valuation status.
 
 🏗️ Approach
-
 Data Preprocessing (preprocess.py)
 
-Load and clean the dataset.
+Load the dataset and handle missing values.
 
-Encode categorical features like Industry.
+Encode categorical features such as Industry.
 
-Create the target column:
+Define the target column:
 
-Companies with profit above the median profit → High Profit
+If Market Value / Sales > threshold → Overvalued
 
-Companies with profit below or equal to the median → Low Profit
+Else → Undervalued
+(Here the threshold is chosen as the median of the Market Value/Sales ratio).
 
 Split the dataset into training and testing sets.
 
 Model Training (train.py)
 
-Train a Random Forest Classifier (chosen for its robustness with both categorical and numerical data).
+Train a Logistic Regression Classifier (chosen for interpretability and ease of use in financial analysis).
 
-Save the trained model to disk for reuse.
+Save the trained model to disk for predictions.
 
-Evaluate the model on test data with metrics like accuracy and classification report.
+Evaluate performance with accuracy, confusion matrix, and classification report.
 
 Prediction (predict.py)
 
 Load the trained model.
 
-Accept company financial data as input (sales, assets, market value, and industry).
+Accept input (sales, assets, profits, industry, and market value).
 
-Predict whether the company is High Profit or Low Profit.
+Output prediction: Overvalued or Undervalued.
 
+📊 Example Usage
