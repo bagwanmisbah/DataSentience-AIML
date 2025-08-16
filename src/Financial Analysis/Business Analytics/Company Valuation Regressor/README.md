@@ -1,6 +1,7 @@
 Company Profit Classifier
 
 This project is designed to classify companies into "High Profit" or "Low Profit" categories based on their financial and industry attributes. The dataset is derived from the Forbes Global 2000 Companies 2025, which includes leading companies worldwide across diverse industries.
+[!ui](assets/image.png)
 
 🔍 Problem Statement
 
@@ -47,3 +48,4 @@ Load the trained model.
 Accept company financial data as input (sales, assets, market value, and industry).
 
 Predict whether the company is High Profit or Low Profit.
+
