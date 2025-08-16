@@ -1,7 +1,7 @@
 Stock Impact Regressor by AI
 
 This project predicts the impact of AI-related events on a company's stock performance using a regression model trained on financial and AI adoption data.
-
+[!ui](assets/image.png)
 🔍 Project Overview
 
 The Stock Impact Regressor by AI leverages machine learning to assess how factors like:
