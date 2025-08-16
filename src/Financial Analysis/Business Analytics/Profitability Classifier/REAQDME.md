@@ -4,7 +4,7 @@
 This project predicts whether a company is “High Profit” or “Low Profit” based on its financial and categorical attributes such as Sales, Assets, Market Value, Industry, and Headquarters.
 
 The dataset used is the Forbes Global 2000 Companies (2025), which contains 2000 companies ranked by revenue, profit, assets, and market value.
-
+[!ui](assets/image.png)
 This project follows the SSOC format:
 
 data/ → contains the dataset (Forbes_2000_Companies_2025.csv)
