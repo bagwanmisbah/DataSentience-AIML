@@ -3,6 +3,7 @@
 This project predicts whether a blood donor is currently **available for donation (Yes/No)** using their donation history and demographic details.  
 It is built in the **SSOC style** with a clean modular structure (`preprocess.py`, `train.py`, `predict.py`) and stores the dataset in `data/` and the trained model in `model/`.
 
+[!ui](assets/image.png)
 ---
 
 ## 📂 Project Structure
