@@ -3,7 +3,7 @@
 
 The Ear Discomfort Predictor is a machine learning project that analyzes survey responses to predict whether a person is likely to experience ear discomfort after using headphones.
 The dataset comes from a Hearing Well-being Survey, which includes insights into headphone usage habits, hearing awareness, age groups, and willingness to adopt hearing-care solutions.
-
+[!ui](assets/image.png)
 This project is part of SSOC (Student Summer of Code) contributions and aims to support research into safe headphone use and personalized hearing-care recommendations.
 
 🚀 Project Goals
