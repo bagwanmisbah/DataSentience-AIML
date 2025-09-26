@@ -16,11 +16,12 @@ import pickle
 from utils import (
     get_weather_data, 
     analyze_soil_health, 
-    get_crop_price_data, 
-    generate_crop_price_forecast, 
-    translate_text
+    get_crop_prices, 
+    predict_price_trend, 
+    translate_text,
+    SUPPORTED_LANGUAGES
 )
-from config import CROP_PRICES, SOIL_HEALTH_RANGES, SUPPORTED_LANGUAGES
+from config import CROP_PRICES, SOIL_HEALTH_PARAMS
 
 # Configure page
 st.set_page_config(
@@ -593,7 +594,7 @@ elif page == "🧪 Soil Analysis":
                 'moisture': moisture_content
             }
             
-            analysis_result = analyze_soil_health(nitrogen_level, phosphorus_level, potassium_level, soil_ph)
+            analysis_result = analyze_soil_health(soil_params)
             
             # Display results
             st.markdown("### 📈 Soil Health Report")
@@ -714,14 +715,14 @@ elif page == "💰 Price Forecast":
         
         if st.button("📈 Generate Price Forecast", use_container_width=True):
             # Get price forecast
-            forecast_df = generate_crop_price_forecast(selected_crop, 30)
+            forecast_data = predict_price_trend(selected_crop, time_period)
             
-            if forecast_df is not None and not forecast_df.empty:
+            if forecast_data:
                 st.markdown(f"### 📈 Price Forecast for {selected_crop.title()}")
                 
                 # Current vs Predicted
                 current_price = CROP_PRICES[selected_crop]
-                predicted_price = forecast_df['Price'].iloc[-1]  # Last predicted price
+                predicted_price = forecast_data['predicted_price']
                 price_change = ((predicted_price - current_price) / current_price) * 100
                 
                 col_a, col_b, col_c = st.columns(3)
@@ -738,7 +739,13 @@ elif page == "💰 Price Forecast":
                     st.metric("Market Trend", f"{trend_emoji} {trend_text}")
                 
                 # Price trend chart
-                fig = px.line(forecast_df, x='Date', y='Price', title=f"{selected_crop.title()} Price Trend Forecast")
+                dates = pd.date_range(start=datetime.now(), periods=len(forecast_data['prices']), freq='D')
+                price_df = pd.DataFrame({
+                    'Date': dates,
+                    'Price': forecast_data['prices']
+                })
+                
+                fig = px.line(price_df, x='Date', y='Price', title=f"{selected_crop.title()} Price Trend Forecast")
                 fig.update_traces(line_color='#10B981', line_width=3)
                 fig.update_layout(
                     yaxis_title="Price (₹/kg)",
